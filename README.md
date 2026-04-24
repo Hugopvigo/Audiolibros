@@ -1,59 +1,72 @@
-# Generador de Audiolibros con Python (Texto a MP3) 
+# 🎧 Generador de Audiolibros con Python
 
-Este proyecto proporciona un script en Python simple y fácil de usar para convertir archivos de texto (`.txt`) en audiolibros (`.mp3`). Ideal para escuchar tus libros, artículos o cualquier otro texto mientras estás en movimiento.
+Convierte tus archivos de texto (`.txt`) en audiolibros (`.mp3`) de forma sencilla utilizando Python y la potencia de Google Text-to-Speech (gTTS).
 
-## Características ✨
+## ✨ Características
 
-* **Conversión Rápida:** Transforma texto a audio MP3 en segundos.
-* **Fácil de Usar:** Simplemente coloca tu texto en `test.txt` y ejecuta el script.
-* **Configurable:** El nombre del archivo de salida (`test.mp3`) se puede personalizar.
-* **Multiplataforma:** Funciona en Windows, macOS y Linux.
-* **gTTS:** Utiliza la API de Google Text-to-Speech para una voz natural.
+*   **🚀 Conversión Rápida:** Genera audiolibros en segundos.
+*   **💻 Interfaz de Línea de Comandos (CLI):** Flexible y fácil de usar con argumentos.
+*   **🌍 Soporte Multilingüe:** Elige el idioma que prefieras (español por defecto).
+*   **🎙️ Calidad Natural:** Utiliza la API de gTTS para una voz clara y natural.
+*   **🛠️ Alternativa Offline:** Incluye scripts de ejemplo para usar `pyttsx3` (motor offline).
 
-## Requisitos 
+## 📋 Requisitos
 
-* Python 3.6 o superior.
-* Librería `gTTS`:
+*   Python 3.6 o superior.
+*   Conexión a internet (para gTTS).
+*   Librería `gTTS`:
     ```bash
     pip install gTTS
     ```
 
-## Instrucciones de Uso 
+## 🚀 Uso Rápido
 
-1.  **Descarga el script:**
-    * Descarga el archivo `audiolibro.py` y guárdalo en tu ordenador.
-2.  **Prepara el texto:**
-    * Crea un archivo llamado `test.txt` en el mismo directorio que el script.
-    * Copia y pega el texto que deseas convertir en audio dentro de `test.txt`.
-3.  **Ejecuta el script:**
-    * Abre una terminal o línea de comandos.
-    * Navega hasta el directorio donde guardaste el script.
-    * Ejecuta el siguiente comando:
-        ```bash
-        python audiolibro.py
-        ```
-4.  **Obtén el audiolibro:**
-    * El script generará un archivo llamado `test.mp3` en el mismo directorio.
-    * ¡Disfruta de tu audiolibro!
+1.  Prepara tu archivo `test.txt` con el contenido.
+2.  Ejecuta el script:
+    ```bash
+    python3 audiolibro.py
+    ```
+3.  Busca tu archivo `test.mp3`.
 
-## Configuración Avanzada ⚙️
+## ⚙️ Configuración Avanzada (CLI)
 
-* **Nombre del archivo de salida:**
-    * Puedes cambiar el nombre del archivo de salida modificando la variable `output_file` en el script.
-    * Ejemplo: `output_file = "mi_audiolibro.mp3"`
-* **Idioma:**
-    * Puedes cambiar el idioma del audio modificando el parámetro `lang` en la llamada a `gTTS()`.
-    * Ejemplo: `tts = gTTS(text=text, lang="en")` (para inglés).
+El script ahora soporta argumentos para mayor flexibilidad:
 
-## Notas Adicionales ℹ️
+```bash
+python3 audiolibro.py [input_file] [output_file] --lang [código_idioma]
+```
 
-* Asegúrate de que tu sistema tenga una conexión a internet activa, ya que `gTTS` requiere acceso a la API de Google.
-* Para textos largos, la generación del audiolibro puede tardar unos minutos.
+### Ejemplos:
 
-## Contribuciones 
+*   **Especificar archivos:**
+    ```bash
+    python3 audiolibro.py mi_libro.txt mi_audio.mp3
+    ```
+*   **Cambiar el idioma (ej. Inglés):**
+    ```bash
+    python3 audiolibro.py libro_en.txt audio_en.mp3 --lang en
+    ```
 
-¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar el script, no dudes en crear un pull request.
+## 🎙️ Motores Alternativos (Offline)
 
-## Licencia 
+Si prefieres no depender de internet o buscas una voz más robótica/local, el archivo `idiomas.py` muestra cómo listar las voces disponibles en tu sistema usando `pyttsx3`.
 
-Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para obtener más detalles.
+Para usarlo, instala:
+```bash
+pip install pyttsx3
+```
+
+## 📂 Estructura del Proyecto
+
+*   `audiolibro.py`: Script principal de conversión (gTTS).
+*   `idiomas.py`: Utilidad para explorar voces locales (pyttsx3).
+*   `test.txt`: Archivo de ejemplo para pruebas.
+*   `LICENSE`: Licencia MIT.
+
+## 🤝 Contribuciones
+
+¿Tienes alguna idea para mejorarlo? ¡Los Pull Requests son bienvenidos!
+
+## 📄 Licencia
+
+Este proyecto está bajo la **Licencia MIT**. Hecho por Hugo Pérez-Vigo
