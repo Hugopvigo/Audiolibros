@@ -69,4 +69,14 @@ pip install pyttsx3
 
 ## 📄 Licencia
 
-Este proyecto está bajo la **Licencia MIT**. Hecho por Hugo Pérez-Vigo
+Este proyecto está bajo la **Licencia MIT**.
+
+---
+
+<div align="center">
+
+**Desarrollado por [Hugo Perez-Vigo](https://hugopvigo.es)** · [@hugopvigo](https://x.com/hugopvigo)
+
+[![GitHub](https://img.shields.io/badge/GitHub-Hugopvigo-181717?style=for-the-badge&logo=github)](https://github.com/Hugopvigo)
+
+</div>
