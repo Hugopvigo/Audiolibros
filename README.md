@@ -69,7 +69,7 @@ pip install pyttsx3
 
 ## 📄 Licencia
 
-Este proyecto está bajo la **Licencia MIT**.
+Este proyecto está bajo **CC BY-NC-SA 4.0** — Consulta [LICENSE](LICENSE) para más detalles.
 
 ---
 
