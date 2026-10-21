@@ -1,3 +1,7 @@
+<meta property="og:title" content="AUDIOLIBROS">
+<meta property="og:description" content="Un script de Python que convierte un archivo de texto en un audiolibro MP3.">
+<meta property="og:image" content="https://raw.githubusercontent.com/Hugopvigo/Audiolibros/main/docs/capturas/og.png">
+
 <p align="center">
   <img src="docs/capturas/00-cabecera.png" alt="Audiolibros — convertir texto en MP3 con gTTS" width="100%">
 </p>
